@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useFonts, Nunito_400Regular, Nunito_700Bold } from '@expo-google-fonts/nunito'
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    Nunito_400Regular,
+    Nunito_700Bold
+  })
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      {fontsLoaded} ? <Text>Daily Diet</Text> : <ActivityIndicator size="large" color="#000" />
       <StatusBar style="auto" />
     </View>
   );
