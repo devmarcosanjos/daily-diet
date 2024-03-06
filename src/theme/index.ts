@@ -20,14 +20,15 @@ export default {
         green_light: '#E5F0DB',
     },
     font_family: {
-        Nunito_400Regular: 'Nunito_400Regular',
-        Nunito_700Bold: 'Nunito_700Bold',
+        regular: 'Nunito_400Regular',
+        bold: 'Nunito_700Bold',
     },
     font_size: {
         body: {
             xs: 12,
             sm: 14,
-            md: 16
+            md: 16,
+            lg: 18,
         },
         title: {
             xs: 14,

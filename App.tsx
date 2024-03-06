@@ -18,7 +18,7 @@ export default function App() {
           barStyle="dark-content"
           translucent
         />
-        {!fontsLoaded ? <HomeScreen /> : <Loading />}
+        {fontsLoaded ? <HomeScreen /> : <Loading />}
     </ThemeProvider>
   );
 }
