@@ -9,15 +9,15 @@ export default {
             gray_6: '#EFF0F0',
             gray_7: '#EFF0F0',
             white: '#FFFFFF',
-        }
-    },
-    brand: {
-        red_dark: '#BF3B44',
-        red_mid: '#F3BABD',
-        red_light: '#F4E6E7',
-        green_dark: '#639339',
-        green_mid: '#CBE4B4',
-        green_light: '#E5F0DB',
+        },
+        brand: {
+            red_dark: '#BF3B44',
+            red_mid: '#F3BABD',
+            red_light: '#F4E6E7',
+            green_dark: '#639339',
+            green_mid: '#CBE4B4',
+            green_light: '#E5F0DB',
+        },
     },
     font_family: {
         regular: 'Nunito_400Regular',
