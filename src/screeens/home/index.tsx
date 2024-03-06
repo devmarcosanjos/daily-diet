@@ -1,10 +1,10 @@
 import { Text, View } from "react-native";
-import { Container, Title, style } from "./styles";
+import { Container, Title,  } from "./styles";
 
 export function HomeScreen() {
     return(
-        <Container style={style.container}>
-            <Title style={style.title} >Home Screen</Title>
+        <Container>
+            <Title>Home Screen</Title>
         </Container>
     )
 }

@@ -1,9 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import { useFonts, Nunito_400Regular, Nunito_700Bold } from '@expo-google-fonts/nunito'
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import { HomeScreen } from 'src/screeens/home';
 import { ThemeProvider } from 'styled-components';
 import theme from '@theme';
+import { Loading } from '@components/Loading';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -13,19 +13,12 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme} >
-      <View style={styles.container}>
-        {fontsLoaded ? (<HomeScreen />) : (<ActivityIndicator size="large" color="#000" />)}
-        <StatusBar style="auto" />
-      </View>
+        <StatusBar
+          backgroundColor="transparent"
+          barStyle="dark-content"
+          translucent
+        />
+        {!fontsLoaded ? <HomeScreen /> : <Loading />}
     </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
