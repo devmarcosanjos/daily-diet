@@ -14,7 +14,6 @@ export function HomeScreen() {
                 iconPosition="left"
                 showIconButton={true}
                 onPress={() => console.log('teste')}
-               
             />
         </Container>
     )
