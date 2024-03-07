@@ -1,26 +1,28 @@
 import { Typography } from "@components/Typography";
 import { Container, Divider, Status } from "./styles";
+import { PressableProps } from "react-native";
+
 
 export type MealStatus = { isOnTheDiet: boolean }
 
-type MealProps = MealStatus & {
+type MealProps = MealStatus & PressableProps &{
     id: string,
     hour: string,
     description: string,
 }
 
-export function Meal({ id, hour, description, isOnTheDiet}: MealProps){
+export function Meal({ ...props}: MealProps){
     return(
-        <Container>
+        <Container {...props}>
             <Typography fontSize="body_xs" fontFamily="bold" >
-                {hour}
+                {props.hour}
             </Typography>
             <Divider />
             <Typography style={{flex: 1}} numberOfLines={1} >
-               {description}
+               {props.description}
             </Typography>
             <Status
-                isOnTheDiet={isOnTheDiet}
+                isOnTheDiet={props.isOnTheDiet}
             />
         </Container>
     )
