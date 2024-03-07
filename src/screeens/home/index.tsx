@@ -5,6 +5,7 @@ import { View } from "react-native";
 import { Typography } from "@components/Typography";
 import { Button } from "@components/Button";
 import { Plus } from "phosphor-react-native";
+import { Meal } from "@components/Meal";
 
 export function HomeScreen() {
     return(
@@ -40,8 +41,14 @@ export function HomeScreen() {
 
                     onPress={() => console.log('teste')}
                 />
-
             </View>
+
+            <Meal 
+                id="1"
+                hour="08:00"
+                description="Café da manhã"
+                isOnTheDiet={false}
+            />
         </Container>
     )
 }
