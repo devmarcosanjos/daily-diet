@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled(View)`
     flex: 1;
-    background-color: ${(props) => props.theme.colors.base.gray_7 };
+    background-color: ${(props) => props.theme.colors.base.white };
     padding: 0 24px;
 `
 
