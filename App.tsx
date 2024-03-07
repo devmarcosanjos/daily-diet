@@ -4,6 +4,7 @@ import { HomeScreen } from 'src/screeens/home';
 import { ThemeProvider } from 'styled-components';
 import theme from '@theme';
 import { Loading } from '@components/Loading';
+import { StatisticsScreen } from 'src/screeens/statistics/statistics';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -18,7 +19,7 @@ export default function App() {
           barStyle="dark-content"
           translucent
         />
-        {fontsLoaded ? <HomeScreen /> : <Loading />}
+        {fontsLoaded ? <StatisticsScreen /> : <Loading />}
     </ThemeProvider>
   );
 }

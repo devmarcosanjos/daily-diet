@@ -7,7 +7,7 @@ export default {
             gray_4: '#B9BBBC',
             gray_5: '#DDDEDF',
             gray_6: '#EFF0F0',
-            gray_7: '#EFF0F0',
+            gray_7: '#FAFAFA',
             white: '#FFFFFF',
         },
         brand: {

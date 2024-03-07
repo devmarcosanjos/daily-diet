@@ -1,6 +1,5 @@
 import styled from "styled-components/native";
 import { TypographyStyle } from ".";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 
 export const Container = styled.Text<TypographyStyle>`
     text-align: ${({textAlign}) => textAlign || 'left'};
@@ -35,7 +34,6 @@ export const Container = styled.Text<TypographyStyle>`
             default:
                 return font_size.body.md
         }
-
     }}px;
 
     color: ${({ theme, color }) => {
