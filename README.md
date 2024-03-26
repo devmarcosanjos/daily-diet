@@ -68,5 +68,3 @@ Contribuições são bem-vindas! Para sugestões, correções de bugs ou melhori
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](link_para_o_arquivo_license) para obter mais informações.
 
 ---
-
-Você pode personalizar este README conforme necessário, adicionando mais detalhes sobre o projeto, instruções de uso, notas de lançamento, etc. Espero que isso te ajude!
